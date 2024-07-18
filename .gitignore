@@ -361,3 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# AppUtil
+/libcurl/curl
+/libcurl/include
+/openssl
