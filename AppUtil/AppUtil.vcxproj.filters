@@ -71,4 +71,7 @@
       <Filter>源文件</Filter>
     </CustomBuild>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
 </Project>

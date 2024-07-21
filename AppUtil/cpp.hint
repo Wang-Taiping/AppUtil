@@ -1,0 +1,4 @@
+#define APPUTIL_EXPORT	__declspec(dllexport)
+#define APPUTIL_EXPORT	__declspec(dllimport)
+#define APPUTIL_API			__stdcall
+#define APPUTIL_CALLBACK	__stdcall

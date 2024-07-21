@@ -15,10 +15,10 @@ extern "C" {
 		NetworkEndian = BigEndian
 	};
 
-	APPUTIL_EXPORT void* reverse_memcpy(void* Dest, const void* Src, size_t Bytes);
-	APPUTIL_EXPORT Endian MachineEndian();
-	APPUTIL_EXPORT int StringConvertToGBK(const char* String, wchar_t* Buffer, int Elems);
-	APPUTIL_EXPORT int StringConvertToUTF8(const wchar_t* String, char* Buffer, int Elems);
+	APPUTIL_EXPORT void* APPUTIL_API reverse_memcpy(void* Dest, const void* Src, size_t Bytes);
+	APPUTIL_EXPORT Endian APPUTIL_API MachineEndian();
+	APPUTIL_EXPORT int APPUTIL_API StringConvertToGBK(const char* String, wchar_t* Buffer, int Elems);
+	APPUTIL_EXPORT int APPUTIL_API StringConvertToUTF8(const wchar_t* String, char* Buffer, int Elems);
 #ifdef __cplusplus
 }
 #endif // __cplusplus

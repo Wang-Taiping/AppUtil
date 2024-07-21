@@ -20,23 +20,23 @@
 extern "C" {
 #endif // __cplusplus
 	typedef void* HAPPDATA;
-	TYPEHANDLE(HAPPDIR);
-	TYPEHANDLE(HAPPFILE);
+	APPUTIL_TYPENAME(HAPPDIR);
+	APPUTIL_TYPENAME(HAPPFILE);
 
-	APPUTIL_EXPORT HAPPDIR AppDataRootDirectory();
-	APPUTIL_EXPORT HAPPDIR AppDataOpenDirectoryA(HAPPDIR pDir, const char* DirName);
-	APPUTIL_EXPORT HAPPDIR AppDataOpenDirectoryW(HAPPDIR pDir, const wchar_t* DirName);
-	APPUTIL_EXPORT ubool AppDataClearDirectory(HAPPDIR hDir);
-	APPUTIL_EXPORT HAPPFILE AppDataOpenFileA(HAPPDIR pDir, const char* FileName, int OpenMode);
-	APPUTIL_EXPORT HAPPFILE AppDataOpenFileW(HAPPDIR pDir, const wchar_t* FileName, int OpenMode);
-	APPUTIL_EXPORT size_t AppDataReadFile(HAPPFILE hFile, void* Buffer, size_t Bytes);
-	APPUTIL_EXPORT size_t AppDataWriteFile(HAPPFILE hFile, const void* Data, size_t Bytes);
-	APPUTIL_EXPORT size_t AppDataMoveFilePointer(HAPPFILE hFile, size_t MoveBytes, int Beginning);
-	APPUTIL_EXPORT size_t AppDataGetFilePointer(HAPPFILE hFile);
-	APPUTIL_EXPORT ubool AppDataCloseHandle(HAPPDATA hAppData);
+	APPUTIL_EXPORT HAPPDIR APPUTIL_API AppDataRootDirectory();
+	APPUTIL_EXPORT HAPPDIR APPUTIL_API AppDataOpenDirectoryA(HAPPDIR pDir, const char* DirName);
+	APPUTIL_EXPORT HAPPDIR APPUTIL_API AppDataOpenDirectoryW(HAPPDIR pDir, const wchar_t* DirName);
+	APPUTIL_EXPORT ubool APPUTIL_API AppDataClearDirectory(HAPPDIR hDir);
+	APPUTIL_EXPORT HAPPFILE APPUTIL_API AppDataOpenFileA(HAPPDIR pDir, const char* FileName, int OpenMode);
+	APPUTIL_EXPORT HAPPFILE APPUTIL_API AppDataOpenFileW(HAPPDIR pDir, const wchar_t* FileName, int OpenMode);
+	APPUTIL_EXPORT size_t APPUTIL_API AppDataReadFile(HAPPFILE hFile, void* Buffer, size_t Bytes);
+	APPUTIL_EXPORT size_t APPUTIL_API AppDataWriteFile(HAPPFILE hFile, const void* Data, size_t Bytes);
+	APPUTIL_EXPORT size_t APPUTIL_API AppDataMoveFilePointer(HAPPFILE hFile, size_t MoveBytes, int Beginning);
+	APPUTIL_EXPORT size_t APPUTIL_API AppDataGetFilePointer(HAPPFILE hFile);
+	APPUTIL_EXPORT ubool APPUTIL_API AppDataCloseHandle(HAPPDATA hAppData);
 
-	APPUTIL_EXPORT ubool AppDataGeneratePathA(HAPPDIR pDir, const char* FileName, char* Buffer, size_t Buflen);
-	APPUTIL_EXPORT ubool AppDataGeneratePathW(HAPPDIR pDir, const wchar_t* FileName, wchar_t* Buffer, size_t Buflen);
+	APPUTIL_EXPORT ubool APPUTIL_API AppDataGeneratePathA(HAPPDIR pDir, const char* FileName, char* Buffer, size_t Buflen);
+	APPUTIL_EXPORT ubool APPUTIL_API AppDataGeneratePathW(HAPPDIR pDir, const wchar_t* FileName, wchar_t* Buffer, size_t Buflen);
 #ifdef __cplusplus
 }
 #endif // __cplusplus
